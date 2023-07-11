@@ -1,0 +1,21 @@
+import time
+starttime = time.time()
+
+dictation = "please type at least 100 words in this sentence"
+print(dictation)
+typing = input("type 50 words here\n")
+
+endtime = time.time()
+timetaken = endtime - starttime
+
+# no of characters = NameError
+noch = len(typing)
+print("no of characters=", noch)
+#speed of typing = sot
+sot = noch/timetaken
+print("speed of typing=", round(sot,2), "char/sec")
+
+if typing==dictation:
+    print("nice work")
+else:
+    print("type correctly")
